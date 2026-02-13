@@ -1,18 +1,22 @@
 import 'package:flutter/material.dart';
 
 class StyledButton extends StatelessWidget {
-  const StyledButton({required this.name, super.key});
+  const StyledButton({required this.name, required this.switchScreen, super.key});
 
   final String name;
+  final void Function() switchScreen;
 
-  void startQuiz() {}
+  
 
   @override
   Widget build(context) {
-    return OutlinedButton(
-      onPressed: startQuiz,
-      style: OutlinedButton.styleFrom(foregroundColor: const Color.fromARGB(255, 238, 235, 243)),
-      child: Text(name),
+    return OutlinedButton.icon(
+      onPressed: switchScreen,
+      style: OutlinedButton.styleFrom(
+        foregroundColor: const Color.fromARGB(255, 238, 235, 243),
+      ),
+      icon: Icon(Icons.arrow_right_alt),
+      label: Text(name, style: TextStyle(fontSize: 18)),
     );
   }
 }
