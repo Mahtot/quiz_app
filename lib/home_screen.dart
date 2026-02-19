@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_app/styled_button.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen(this.switchScreen, {super.key});
@@ -19,9 +20,9 @@ class HomeScreen extends StatelessWidget {
             color: const Color.fromARGB(168, 255, 255, 255),
           ),
           const SizedBox(height: 80),
-          const Text(
-            'Know your MBTI the fun way!',
-            style: TextStyle(
+          Text(
+            'Learn Flutter the fun way!',
+            style: GoogleFonts.leagueSpartan(
               color: Color.fromARGB(255, 220, 211, 235),
               fontSize: 24,
             ),

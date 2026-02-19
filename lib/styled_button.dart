@@ -16,7 +16,7 @@ class StyledButton extends StatelessWidget {
         foregroundColor: const Color.fromARGB(255, 238, 235, 243),
       ),
       icon: Icon(Icons.arrow_right_alt),
-      label: Text(name, style: TextStyle(fontSize: 18)),
+      label: Text(name, style: TextStyle(fontSize: 18), textAlign: TextAlign.end,),
     );
   }
 }
