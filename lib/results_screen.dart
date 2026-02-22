@@ -29,9 +29,9 @@ class ResultsScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('You answered X out of Y questions correctly!'),
+            Text('You answered X out of Y questions correctly!', style: TextStyle(color: const Color.fromARGB(255, 225, 216, 233))),
             SizedBox(height: 30),
-            Text('List of answers and questions ....'),
+            Text('List of answers and questions ....', style: TextStyle(color: const Color.fromARGB(255, 225, 216, 233))),
             SizedBox(height: 30),
             TextButton(onPressed: () {}, child: Text('Restart Quiz')),
           ],
